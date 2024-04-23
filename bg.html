@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="background">
+
+    <center> <div style="font-size:100px;">abc</div>
+        <script>
+            var i=0;
+            function change(){
+                var doc=document.getElementById("background");
+                var color=["red","blue","pink"];
+                doc.style.backgroundColor=color[i];
+                i=(i+1)%color.length;
+
+            }
+            setInterval(change,75);
+        </script>
+    </center>
+    
+</body>
+</html>
